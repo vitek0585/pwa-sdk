@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="scripts/script.js"></script>
+		<link rel="manifest" href="manifest.json">
+</head>
+<body class="background-img second-form">
+	<div class="section">
+	    <div class="logo">
+	        <img class="logo-img" src="img/logo.png">
+	    </div>
+	    <div class="login-form" style="align-items: center; justify-content: flex-start;">
+	    	<form id="form" style="width: 90%;">
+                <div style="height: auto;">
+                	<p class="hello">Welcome to CredoLab loan web form</p>
+					<p class="hello2">Please enter link and auth-key to access</p>
+					<div class="field">
+	                    <label for="link" style="font-size: 14px;">Server link</label>
+	                    <select id="link">
+	                    	<option value="https://scoring-vn.credolab.com">scoring-vn.credolab.com</option>
+	                    	<option value="https://scoring-id.credolab.com">scoring-id.credolab.com</option>
+	                    	<option value="https://scoring-ph.credolab.com">scoring-ph.credolab.com</option>
+	                    	<option value="https://scoring-sg.credolab.com">scoring-sg.credolab.com</option>
+	                    	<option value="https://scoring-mm.credolab.com">scoring-mm.credolab.com</option>
+	                    	<option value="https://scoring-br.credolab.com">scoring-br.credolab.com</option>
+	                    	<option value="https://scoring-in.credolab.com">scoring-in.credolab.com</option>
+	                    </select>
+	                </div> 
+	                <div class="field">
+	                    <label for="key" style="font-size: 14px;">Key</label>
+	                    <input type="text" name="key" id="key">
+	                </div> 
+	            </div>
+            <input type="button" class="btn" style="margin:20px auto 20px;" onclick="logIn()" value="Log in"> 
+        </form>
+	    </div>
+	</div>
+</body>
+</html>

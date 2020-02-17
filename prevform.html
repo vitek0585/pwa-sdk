@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="credoappsdk.js"></script>
+    <script src="credoappClient.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Anton|Indie+Flower|PT+Sans:400,700|Press+Start+2P&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Audiowide&display=swap" rel="stylesheet">
+    <title>Hello, world!</title>
+  </head>
+  <body class="background-img">
+    <div class="section">
+        <div class="logo">
+            <img class="logo-img" src="img/logo.png">
+        </div>
+        <div class="form" >
+            <div class="form-title" style="margin-left: 30px;">
+                <h1>I need <span id="value">1000<span style="font-size: 15px;">$</span></h1>
+            </div>
+            <div class="container">
+                <input id="range" oninput="getRange()" type="range" min="500" max="10000" step="500" value="1000">
+                <label for="range" id="value"></label>
+            </div>
+            <div style="display: flex; justify-content: space-between; margin: 0 30px; font-size: 12px; color:#666">
+                <div>500$</div>
+                <div>10000$</div>
+            </div>
+            <div class="form-title" style="margin-left: 30px;">
+                <h1>Period <span id="value2">7 <span style="font-size: 15px;">days</span></h1>
+            </div>
+            <div class="container">
+                <input id="range2" oninput="getRange2()" type="range" min="1" max="30" step="1" value="7">
+                <label for="range" id="value2"></label>
+            </div>
+            <div style="display: flex; justify-content: space-between; margin: 0 30px; font-size: 12px; color:#666">
+                <div>1 day</div>
+                <div>30 days</div>
+            </div>
+            <button id="getLoan" onclick="cl()" rusa="test" class="btn">Apply for a loan</button>
+        </div>
+    </div>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>

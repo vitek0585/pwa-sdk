@@ -1,0 +1,14 @@
+{
+    "background_color": "purple",
+    "description": "CredoApp SDK Web Demo",
+    "display": "fullscreen",
+    "icons": [
+      {
+        "src": "/img/logo.png",
+        "type": "image/png"
+      }
+    ],
+    "name": "CredoApp SDK Web",
+    "short_name": "CredoAppSDKWeb",
+    "start_url": "index.html"
+  }
